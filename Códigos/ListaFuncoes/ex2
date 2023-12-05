@@ -1,0 +1,15 @@
+#include <stdio.h>
+  #include <string.h>
+
+  float converter(float temp){
+    float celsius;
+    celsius = (temp - 32.0) * (5.0/9.0);
+
+    return celsius;
+  }
+   int main(){
+    float tempF = 100;
+    float res;
+    res = converter(tempF);
+    printf("%f", res);
+  }
